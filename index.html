@@ -1,0 +1,165 @@
+<!--This file will contain the complete structure of your portfolio website, including all sections: Home, About, Projects, and Contact.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuri Kawade - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mayuri Kawade</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Resume/Kawade_Mayuri_Resume.pdf" target="_blank" class="resume-button">Resume <i class="fas fa-download"></i></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="images/profile.jpg" alt="Your Profile Picture" class="profile-pic">
+                <h1>Hi, I'm Mayuri</h1>
+                <p>A passionate Java Full Stack Developer, creating engaging and responsive web experiences.</p>
+                <a href="#projects" class="button primary-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-me">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to my page! I'm Mayuri, a dedicated Full Stack-Developer with a strong passion for building innovative and user-friendly web applications. </p>
+                        <p>Proficient in HTML,CSS, Javascript, Core Java, Object-oriented programming, and related technologies. I love turning complex problems into elegant solutions and constantly learning new technologies to stay at the forefront of the industry.</p>
+                        <h3>Education</h3>
+                        <ul>
+                            <li><strong>Bachelor of Computer Applications</strong> - Amity University, 2024</li>
+                            <li><strong>Java Full Stack Development Course</strong> - 3RI Technologies, 2025</li>
+                            <li><strong>Masters in Computer Applications</strong> - Manipal Institute of Technology, Till Date</li>
+                            
+                        </ul>
+                        <h3>Internships</h3>
+                        <ul>
+                            <li><strong>Python Programming Intern</strong> - Codsoft (10 Aug 2024 - 10 Sep 2024)
+                                <ul>
+                                    <li>Developed various Python applications, including a contact book, rock-paper-scissors game, password generator, and simple calculator.</li>
+                                    <li>Implemented user-friendly interfaces and ensured code readability and efficiency.</li>
+                                    <li>Conducted testing and debugging to enhance application performance and reliability.</li>
+                                </ul>
+                            </li>
+
+                            <li><strong>C++ Programming Intern</strong> - Codsoft (15 Aug 2024 - 15 Sep 2024)
+                                <ul>
+                                    <li>Developed various C++ applications, including a to-do list, tic-tac-toe game, calculator, and random number guessing game.</li>
+                                    <li>Implemented efficient algorithms and data structures to enhance application performance.</li>
+                                    <li>Conducted testing and debugging to ensure code quality and functionality.</li>
+                                </ul>
+                            </li>
+
+                            <li><strong>Web Development Intern</strong> - Unified Mentor (1 Jun 2025 - 1 Sep 2025)
+                                <ul>
+                                    <li>Development of Basic Level projects to Advanced Level Projects</li>
+                                    <li>Skills maily Used - HTML, CSS, Javascript, Java, MySQL, etc.</li>
+                                    <li>Worked on tasks such as - Gym Management, Student-Teacher appointment, Personal portfolio, Countdown Timer</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <h3>Hobbies & Interests</h3>
+                        <p>I enjoy building Full stack web applications using technologies like Java, SpringBoot, and React. Also flexible in working with Programming languages like Python, C, C++.
+                            In my free time, I work on personal projects to explore new tools and frameworks. 
+                            I also participate in coding challenges on platforms like HakerRanks to sharpen my problem solving skills.
+                            Beyond development, I have strong interest in Reading Books, writing aritcles related to Tech and many more.
+                            I find listening music and playing instruments more relaxing as I believe a balanced life fuels creativity and problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="Images/Billing_app.png" alt="Project 1 Thumbnail">
+                        <h3>Billing Application</h3>
+                        <p>Its a Billing application with Tkinter GUI, created in Python Programming language.</p>
+                        <a href="https://github.com/kawade85/Billing-application" target="_blank" class="button secondary-button">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/Library_management.png" alt="Project 2 Thumbnail">
+                        <h3>Library Management System</h3>
+                        <p>Library Management System created in Python programming.</p>
+                        <a href="https://github.com/kawade85/Library_management" target="_blank" class="button secondary-button">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/Student_grade.jpg" alt="Project 3 Thumbnail">
+                        <h3>Student Grade Tracker</h3>
+                        <p>This is a student grade managing system, created in Python Programming language.</p>
+                        <a href="https://github.com/kawade85/Student_Grade_Tracker" target="_blank" class="button secondary-button">View Project</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div class="error-message" id="subject-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    <button type="submit" class="button primary-button">Send Message</button>
+                    <div class="success-message" id="form-success"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kawade Mayuri. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mayuri-kawade-b2b111300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kawade85" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto: mayurikawade85@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
